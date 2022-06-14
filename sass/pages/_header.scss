@@ -1,0 +1,47 @@
+$PrimaryColor: #03fcf4;
+$SecondaryColor: #09e827;
+.header {
+    z-index: 1;
+    grid-area:header;
+
+    nav {
+        z-index: 1;
+        form {
+            button {
+                color: $PrimaryColor;
+                border-color: $SecondaryColor;
+                font-size: 1.2rem;
+            }
+        }
+        .nav__socialmedia-box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition:.5s;
+            :hover {
+                color:$PrimaryColor;
+                transform:scale(1.3);
+            }
+        }
+        a {
+            color: #fff;
+            font-family: 'poppins', sans-serif;
+            font-weight: 700;
+            font-size: 1.5rem;
+        }
+    }
+
+    .dropdown {
+        color: #fff;
+
+        &-menu {
+            background-color: rgba(56, 53, 53, 0.609);
+
+            .dropdown-item {
+                color: #fff;
+                min-width:200px;
+            }
+
+        }
+    }
+}
