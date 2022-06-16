@@ -1,10 +1,13 @@
-$PrimaryColor: #03fcf4;
-$SecondaryColor: #09e827;
+
 .header {
     z-index: 1;
     grid-area:header;
 
     nav {
+        .navbar-brand {
+            @include Title-Styles;
+            color: $TextColor;
+        }
         z-index: 1;
         form {
             button {
@@ -24,24 +27,24 @@ $SecondaryColor: #09e827;
             }
         }
         a {
-            color: #fff;
+            color: $TextColor;
             font-family: 'poppins', sans-serif;
             font-weight: 700;
             font-size: 1.5rem;
         }
-    }
-
-    .dropdown {
-        color: #fff;
-
-        &-menu {
-            background-color: rgba(56, 53, 53, 0.609);
-
-            .dropdown-item {
-                color: #fff;
-                min-width:200px;
+        .dropdown {
+            color: $TextColor;
+    
+            &-menu {
+                background-color: rgba(56, 53, 53, 0.609);
+    
+                .dropdown-item {
+                    color: $TextColor;
+                    min-width:200px;
+                }
+    
             }
-
         }
     }
+
 }

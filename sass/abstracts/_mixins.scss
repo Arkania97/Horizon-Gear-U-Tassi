@@ -1,0 +1,16 @@
+@mixin SuperCenter() {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+@mixin Title-Styles {
+    font-family: 'Permanent Marker', cursive;
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+//No estuve pudiendo enlazar mi partial de _variables.scss y mi partial _mixins.scss
+//Sigo buscando soluciones al respecto, pero por el momento pareciera que la única forma
+//que tengo de hacer funcionar las variables y mixins sería declarandolas en el principio
+//del partial en el que quiero que aparezcan.

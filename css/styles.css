@@ -3,6 +3,11 @@
   grid-area: header; }
   .header nav {
     z-index: 1; }
+    .header nav .navbar-brand {
+      font-family: 'Permanent Marker', cursive;
+      font-size: 2rem;
+      font-weight: 400;
+      color: #fff; }
     .header nav form button {
       color: #03fcf4;
       border-color: #09e827;
@@ -20,13 +25,13 @@
       font-family: 'poppins', sans-serif;
       font-weight: 700;
       font-size: 1.5rem; }
-  .header .dropdown {
-    color: #fff; }
-    .header .dropdown-menu {
-      background-color: rgba(56, 53, 53, 0.609); }
-      .header .dropdown-menu .dropdown-item {
-        color: #fff;
-        min-width: 200px; }
+    .header nav .dropdown {
+      color: #fff; }
+      .header nav .dropdown-menu {
+        background-color: rgba(56, 53, 53, 0.609); }
+        .header nav .dropdown-menu .dropdown-item {
+          color: #fff;
+          min-width: 200px; }
 
 .body__index {
   min-width: 100%;
@@ -54,38 +59,45 @@
           font-weight: 700; }
         .body__index .grid__container .main__container .main__carousel .carousel-inner p {
           color: #fff;
-          font-size: 1.8rem;
+          font-size: 2rem;
           font-weight: 600;
           transition: .5s; }
         .body__index .grid__container .main__container .main__carousel .carousel-inner :hover {
           color: #03fcf4; }
-      .body__index .grid__container .main__container .main__section1 {
+      .body__index .grid__container .main__container .main__section1, .body__index .grid__container .main__container .main__section2 {
+        display: flex;
         justify-content: center;
         align-content: center;
         flex-direction: column; }
-        .body__index .grid__container .main__container .main__section1 a {
-          color: #000;
+        .body__index .grid__container .main__container .main__section1 img, .body__index .grid__container .main__container .main__section2 img {
+          min-height: 470px; }
+          @media screen and (max-width: 992px) {
+            .body__index .grid__container .main__container .main__section1 img, .body__index .grid__container .main__container .main__section2 img {
+              height: auto; } }
+        .body__index .grid__container .main__container .main__section1 a, .body__index .grid__container .main__container .main__section2 a {
+          font-family: 'Permanent Marker', cursive;
           font-size: 2rem;
-          transition: .5s;
-          font-family: 'Permanent Marker', cursive; }
-        .body__index .grid__container .main__container .main__section1 :hover {
-          color: #03fcf4; }
-      .body__index .grid__container .main__container .main__section2 {
-        justify-content: center;
-        align-content: center;
-        flex-direction: column; }
-        .body__index .grid__container .main__container .main__section2 a {
+          font-weight: 400;
           color: #000;
-          font-size: 2rem;
-          transition: .5s;
-          font-family: 'Permanent Marker', cursive; }
-        .body__index .grid__container .main__container .main__section2 :hover {
+          transition: .5s; }
+          @media screen and (max-width: 992px) {
+            .body__index .grid__container .main__container .main__section1 a, .body__index .grid__container .main__container .main__section2 a {
+              color: #fff; } }
+        .body__index .grid__container .main__container .main__section1 :hover, .body__index .grid__container .main__container .main__section2 :hover {
           color: #03fcf4; }
-      .body__index .grid__container .main__container .artists-img {
+      .body__index .grid__container .main__container .main__section2 a {
+        font-family: 'Permanent Marker', cursive;
+        font-size: 2rem;
+        font-weight: 400;
+        transition: .5s;
+        color: #fff; }
+      .body__index .grid__container .main__container .main__section2 :hover {
+        color: #03fcf4; }
+      .body__index .grid__container .main__container .main__section2 .artists-img {
         width: 100%;
         max-height: 620px; }
         @media screen and (max-width: 768px) {
-          .body__index .grid__container .main__container .artists-img {
+          .body__index .grid__container .main__container .main__section2 .artists-img {
             width: 100%;
             max-height: 250px; } }
     .body__index .grid__container .footer {
